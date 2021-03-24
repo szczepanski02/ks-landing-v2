@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- ABOUT WEBSITE -->
+    <title>Strona główna</title>
+    <meta name="description" content="Landing page for webinar.">
+    <meta name="keywords" content="Webinar, landingpage, website, bootstrap">
+    <meta name="author" content="Radosław Szczepański FD II sp z.o.o.">
+    <link rel="icon" type="image/png" href="assets/imgs/favicon.png" />
+    <!-- CSS FILES -->
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <!-- BOOTSTRAP -->
+    <link href="assets/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="preloader"></div>
+    <script>
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.getElementById('preloader').classList.add("fade-out");
+            }, 1000);
+            setTimeout(() => {
+                document.getElementById('preloader').style.display = "none";
+            }, 2000);
+        });
+    </script>
+    <nav class="navbar navbar-default py-3" style="padding-left: 40px; padding-right: 40px;">
+        <div class="brand">
+            <a class="navbar-brand" href="#">KSIĘGOWOŚĆ</a>
+        </div>
+        <div class="nav-contact justify-content-center d-flex">
+            <p class="my-auto">Oddzwonimy do Ciebie w ciągu 60 sekund</p>
+            <img class="right-arrow px-4" style="opacity: 0.8;" src="assets/imgs/nav/right-arrow.svg" width="70px" alt="arrow, arrow icon, strzałka, ikona strzałki">
+            <button class="call-button">
+                <img src="assets/imgs/nav/call.svg" alt="call icon, phone, telefon, zadzwoń">
+                Zadzwoń
+            </button>
+            <button class="write-button">
+                <img src="assets/imgs/nav/write.svg" alt="write icon, write, napisz, skontaktuj się">
+                Napisz
+            </button>
+            <!--mobile buttons-->
+            <button class="btn call-mobile-button mr-2">
+                <img src="assets/imgs/nav/call.svg" alt="call icon, phone, telefon, zadzwoń">
+            </button>
+            <button class="btn write-mobile-button">
+                <img src="assets/imgs/nav/write.svg" alt="write icon, write, napisz, skontaktuj się">
+            </button>
+        </div>
+    </nav>
+    <header id="main">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="header-text col-md-6 my-auto">
+                    <h2>Rób to co kochasz,<br> a my zajmiemy się papierami.</h2>
+                </div>
+                <div class="header-img text-center col-md-6">
+                    <img src="assets/imgs/header.jpg" alt="header image, zdjęcie nagłówkowe, Pani trzymająca tablet, icons, ikony, gray background, szare tło">
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="arrow-scroll-down">
+        <img src="assets/imgs/arrow-down.svg" width="28px" alt="scroll down, arrow icon, ikona strzałki, przewiń w dół">
+    </div>
+
+    <section id="bar">
+        <div class="container text-center">
+            <img id="desktop-bar" src="assets/imgs/bar.jpg" alt="bar image, angry icons, problem with taxes, problemy z podatkami, złe twarze na ikonach">
+            <img id="mobile-bar" src="assets/imgs/bar-mobile.jpg" alt="bar image, angry icons, problem with taxes, problemy z podatkami, złe twarze na ikonach">
+        </div>
+    </section>
+    <section id="about-us">
+        <div class="container">
+            <h2 class="my-5">My jesteśmy inni</h2>
+            <div class="about-us-text"></div>
+
+            <div class="about-us-desktop row pb-5 justify-content-around">
+                <div class="card-box col-md-4">
+                    <div class="icon-box">
+                        <img src="assets/imgs/cards/clock.svg" width="26px" alt="clock icon, time, ikona zegarka, czas">
+                    </div>
+                    <h3>Wszystko na czas</h3>
+                    <p>Suspendisse sed efficitur sem, id ultrices lorem. Mauris volutpat eleifend imperdiet.</p>
+                </div>
+                <div class="card-box col-md-4">
+                    <div class="icon-box">
+                        <img src="assets/imgs/cards/money.svg" width="26px" alt="money icon, ikona z pieniędzmi">
+                    </div>
+                    <h3>Wszystko na czas</h3>
+                    <p>Suspendisse sed efficitur sem, id ultrices lorem. Mauris volutpat eleifend imperdiet.</p>
+                </div>
+            </div>
+
+            <div class="about-us-desktop row pt-5 justify-content-around">
+                <div class="card-box col-md-4">
+                    <div class="icon-box">
+                        <img src="assets/imgs/cards/checklist.svg" width="26px" alt="checklist icon, ikona listy">
+                    </div>
+                    <h3>Wszystko na czas</h3>
+                    <p>Suspendisse sed efficitur sem, id ultrices lorem. Mauris volutpat eleifend imperdiet.</p>
+                </div>
+                <div class="card-box col-md-4">
+                    <div class="icon-box">
+                        <img src="assets/imgs/cards/contact.svg" width="26px" alt="contact icon, ikona kontaktu">
+                    </div>
+                    <h3>Wszystko na czas</h3>
+                    <p>Suspendisse sed efficitur sem, id ultrices lorem. Mauris volutpat eleifend imperdiet.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="mobile-carousel">
+        <div class="container-fluid">
+            <div class="text-center">
+                <h2 class="mt-5" style="font-size: 36px;">My jesteśmy inni</h2>
+            </div>
+            <div class="row justify-content-center">
+                <div id="carousel" class="carousel slide my-auto pt-4 mx-2" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel" data-slide-to="1"></li>
+                        <li data-target="#carousel" data-slide-to="2"></li>
+                        <li data-target="#carousel" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner px-5">
+                        <div class="carousel-item active">
+                            <div class="icon-box mb-3">
+                                <img src="assets/imgs/cards/clock.svg" width="26px" alt="clock icon, time, ikona zegarka, czas">
+                            </div>
+                            <h3 id="card-head">Wszystko na czas</h3>
+                            <p id="card-text">Suspendisse sed efficitur sem, id ultrices lorem. Mauris volutpat eleifend imperdiet.</p>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="icon-box mb-3">
+                                <img src="assets/imgs/cards/money.svg" width="26px" alt="money icon, ikona z pieniędzmi">
+                            </div>
+                            <h3>Wszystko na czas</h3>
+                            <p>Suspendisse sed efficitur sem, id ultrices lorem. Mauris volutpat eleifend imperdiet.</p>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="icon-box mb-3">
+                                <img src="assets/imgs/cards/checklist.svg" width="26px" alt="checklist icon, ikona listy">
+                            </div>
+                            <h3>Wszystko na czas</h3>
+                            <p>Suspendisse sed efficitur sem, id ultrices lorem. Mauris volutpat eleifend imperdiet.</p>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="icon-box mb-3">
+                                <img src="assets/imgs/cards/contact.svg" width="26px" alt="contact icon, ikona kontaktu">
+                            </div>
+                            <h3>Wszystko na czas</h3>
+                            <p>Suspendisse sed efficitur sem, id ultrices lorem. Mauris volutpat eleifend imperdiet.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container text-center">
+            <div class="text-center">
+                <h2>Skorzystaj z pierwszego<br>miesiąca za darmo</h2>
+                <p2>lub zapłać 11 faktur zamiast 12 w roku do końca współpracy</p2>
+            </div>
+            <div class="form-table col-12 pt-5">
+                <form method="post" id="contact_form">
+                    <div><label for="name">Name and surname</label></div>
+                    <div><input type="text" id="name" class="formField" /></div>
+                    <div><label for="email">Email adress</label></div>
+                    <div><input type="text" name="email" id="email" class="formField" /></div>
+                    <div class="vertical-check"><input type="checkbox" class="checkbox-icon" /><span class="check-box">Akceptuję zasady <a href="#" class="personal-data">Przetwarzania danych</a></span>
+                    </div>
+                    <div><button id="sendBtn" class="btn form-button">Wyślij</button></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer" class="py-4">
+        <p>Copyright © 2020</p>
+    </section>
+
+
+
+</body>
+
+<!-- Bootstrap JS & JQUERY -->
+<script src="assets/bootstrap/bootstrap.min.js"></script>
+
+
+</html>
